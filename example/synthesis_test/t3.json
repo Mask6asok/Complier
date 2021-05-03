@@ -1,0 +1,490 @@
+[
+    {
+        "type": "keyword",
+        "contents": [
+            {
+                "description": "for",
+                "production": [
+                    "A-><f>B",
+                    "B-><o>C",
+                    "C-><r>"
+                ]
+            },
+            {
+                "description": "in",
+                "production": [
+                    "A-><i>B",
+                    "B-><n>"
+                ]
+            },
+            {
+                "description": "do",
+                "production": [
+                    "A-><d>B",
+                    "B-><o>"
+                ]
+            },
+            {
+                "description": "end",
+                "production": [
+                    "A-><e>B",
+                    "B-><n>C",
+                    "C-><d>"
+                ]
+            },
+            {
+                "description": "while",
+                "production": [
+                    "A-><w>B",
+                    "B-><h>C",
+                    "C-><i>D",
+                    "D-><l>E",
+                    "E-><e>"
+                ]
+            },
+            {
+                "description": "break",
+                "production": [
+                    "A-><b>B",
+                    "B-><r>C",
+                    "C-><e>D",
+                    "D-><a>E",
+                    "E-><k>"
+                ]
+            },
+            {
+                "description": "if",
+                "production": [
+                    "A-><i>B",
+                    "B-><f>"
+                ]
+            },
+            {
+                "description": "then",
+                "production": [
+                    "A-><t>B",
+                    "B-><h>C",
+                    "C-><e>D",
+                    "D-><n>"
+                ]
+            },
+            {
+                "description": "else",
+                "production": [
+                    "A-><e>B",
+                    "B-><l>C",
+                    "C-><s>D",
+                    "D-><e>"
+                ]
+            },
+            {
+                "description": "elseif",
+                "production": [
+                    "A-><e>B",
+                    "B-><l>C",
+                    "C-><s>D",
+                    "D-><e>E",
+                    "E-><i>F",
+                    "F-><f>"
+                ]
+            },
+            {
+                "description": "local",
+                "production": [
+                    "A-><l>B",
+                    "B-><o>C",
+                    "C-><c>D",
+                    "D-><a>E",
+                    "E-><l>"
+                ]
+            },
+            {
+                "description": "true",
+                "production": [
+                    "A-><t>B",
+                    "B-><r>C",
+                    "C-><u>D",
+                    "D-><e>"
+                ]
+            },
+            {
+                "description": "false",
+                "production": [
+                    "A-><f>B",
+                    "B-><a>C",
+                    "C-><l>D",
+                    "D-><s>E",
+                    "E-><e>"
+                ]
+            },
+            {
+                "description": "nil",
+                "production": [
+                    "A-><n>B",
+                    "B-><i>C",
+                    "C-><l>"
+                ]
+            },
+            {
+                "description": "number",
+                "production": [
+                    "A-><n>B",
+                    "B-><u>C",
+                    "C-><m>D",
+                    "D-><b>E",
+                    "E-><e>F",
+                    "F-><r>"
+                ]
+            },
+            {
+                "description": "function",
+                "production": [
+                    "A-><f>B",
+                    "B-><u>C",
+                    "C-><n>D",
+                    "D-><c>E",
+                    "E-><t>F",
+                    "F-><i>G",
+                    "G-><o>H",
+                    "H-><n>"
+                ]
+            },
+            {
+                "description": "return",
+                "production": [
+                    "A-><r>B",
+                    "B-><e>C",
+                    "C-><t>D",
+                    "D-><u>E",
+                    "E-><r>F",
+                    "F-><n>"
+                ]
+            },
+            {
+                "description": "require",
+                "production": [
+                    "A-><r>B",
+                    "B-><e>C",
+                    "C-><q>D",
+                    "D-><u>E",
+                    "E-><i>F",
+                    "F-><r>G",
+                    "G-><e>"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "identifier",
+        "contents": [
+            {
+                "description": "constants & variables",
+                "production": [
+                    "A-><letter>B",
+                    "A-><_>B",
+                    "B-><letter>B",
+                    "B-><digit>B",
+                    "B-><_>B",
+                    "B-><empty>"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "constant",
+        "contents": [
+            {
+                "description": "true",
+                "production": [
+                    "A-><t>B",
+                    "B-><r>C",
+                    "C-><u>D",
+                    "D-><e>"
+                ]
+            },
+            {
+                "description": "false",
+                "production": [
+                    "A-><f>B",
+                    "B-><a>C",
+                    "C-><l>D",
+                    "D-><s>E",
+                    "E-><e>"
+                ]
+            },
+            {
+                "description": "constant numbers",
+                "production": [
+                    "A-><->B",
+                    "A->B",
+                    "B-><digit>C",
+                    "C-><digit>C",
+                    "C->D",
+                    "C-><.>F",
+                    "D->E",
+                    "E-><empty>",
+                    "F-><digit>G",
+                    "D-><E>H",
+                    "G-><digit>G",
+                    "G->D",
+                    "E-><+>I",
+                    "E-><->I",
+                    "H-><+>J",
+                    "H-><->J",
+                    "J-><digit>L",
+                    "I->K",
+                    "K-><i>",
+                    "L-><digit>L",
+                    "I-><digit>M",
+                    "L->E",
+                    "M-><digit>M",
+                    "L-><.>N",
+                    "M->K",
+                    "N-><digit>O",
+                    "M-><.>P",
+                    "O-><digit>O",
+                    "O->E",
+                    "P-><digit>Q",
+                    "Q-><digit>Q",
+                    "Q->K"
+                ]
+            },
+            {
+                "description": "strings",
+                "production": [
+                    "A-><\">B",
+                    "B-><dot1>B",
+                    "B-><\\>C",
+                    "C-><\">B",
+                    "B-><\">",
+                    "A-><'>D",
+                    "D-><dot2>D",
+                    "D-><\\>E",
+                    "E-><'>D",
+                    "D-><'>"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "operator",
+        "contents": [
+            {
+                "description": "=",
+                "production": [
+                    "A-><=>"
+                ]
+            },
+            {
+                "description": "~",
+                "production": [
+                    "A-><~>"
+                ]
+            },
+            {
+                "description": "+",
+                "production": [
+                    "A-><+>"
+                ]
+            },
+            {
+                "description": "-",
+                "production": [
+                    "A-><->"
+                ]
+            },
+            {
+                "description": "*",
+                "production": [
+                    "A-><*>"
+                ]
+            },
+            {
+                "description": "/",
+                "production": [
+                    "A-></>"
+                ]
+            },
+            {
+                "description": "%",
+                "production": [
+                    "A-><%>"
+                ]
+            },
+            {
+                "description": "&",
+                "production": [
+                    "A-><&>"
+                ]
+            },
+            {
+                "description": "|",
+                "production": [
+                    "A-><|>"
+                ]
+            },
+            {
+                "description": "^",
+                "production": [
+                    "A-><^>"
+                ]
+            },
+            {
+                "description": "//",
+                "production": [
+                    "A-></>B",
+                    "B-></>"
+                ]
+            },
+            {
+                "description": "<<",
+                "production": [
+                    "A-><<>B",
+                    "B-><<>"
+                ]
+            },
+            {
+                "description": ">>",
+                "production": [
+                    "A-><>>B",
+                    "B-><>>"
+                ]
+            },
+            {
+                "description": "..",
+                "production": [
+                    "A-><.>B",
+                    "B-><.>"
+                ]
+            },
+            {
+                "description": "and",
+                "production": [
+                    "A-><a>B",
+                    "B-><n>C",
+                    "C-><d>"
+                ]
+            },
+            {
+                "description": "or",
+                "production": [
+                    "A-><o>B",
+                    "B-><r>"
+                ]
+            },
+            {
+                "description": "not",
+                "production": [
+                    "A-><n>B",
+                    "B-><o>C",
+                    "C-><t>"
+                ]
+            },
+            {
+                "description": "==",
+                "production": [
+                    "A-><=>B",
+                    "B-><=>"
+                ]
+            },
+            {
+                "description": "~=",
+                "production": [
+                    "A-><~>B",
+                    "B-><=>"
+                ]
+            },
+            {
+                "description": ">",
+                "production": [
+                    "A-><>>"
+                ]
+            },
+            {
+                "description": "<",
+                "production": [
+                    "A-><<>"
+                ]
+            },
+            {
+                "description": ">=",
+                "production": [
+                    "A-><>>B",
+                    "B-><=>"
+                ]
+            },
+            {
+                "description": "<=",
+                "production": [
+                    "A-><<>B",
+                    "B-><=>"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "delimiter",
+        "contents": [
+            {
+                "description": "{",
+                "production": [
+                    "A-><{>"
+                ]
+            },
+            {
+                "description": "}",
+                "production": [
+                    "A-><}>"
+                ]
+            },
+            {
+                "description": "[",
+                "production": [
+                    "A-><[>"
+                ]
+            },
+            {
+                "description": "]",
+                "production": [
+                    "A-><]>"
+                ]
+            },
+            {
+                "description": "(",
+                "production": [
+                    "A-><(>"
+                ]
+            },
+            {
+                "description": ")",
+                "production": [
+                    "A-><)>"
+                ]
+            },
+            {
+                "description": ",",
+                "production": [
+                    "A-><,>"
+                ]
+            },
+            {
+                "description": ".",
+                "production": [
+                    "A-><.>"
+                ]
+            },
+            {
+                "description": ";",
+                "production": [
+                    "A-><;>"
+                ]
+            },
+            {
+                "description": ":",
+                "production": [
+                    "A-><:>"
+                ]
+            }
+        ]
+    }
+]

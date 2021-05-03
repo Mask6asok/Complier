@@ -1,0 +1,24 @@
+[
+    {
+        "description": "code starts",
+        "contents": [
+            {
+                "left": "<CODE>",
+                "right": "<B> <B>"
+            }
+        ]
+    },
+    {
+        "description": "b",
+        "contents": [
+            {
+                "left": "<B>",
+                "right": "a <B>"
+            },
+            {
+                "left": "<B>",
+                "right": "b"
+            }
+        ]
+    }
+]

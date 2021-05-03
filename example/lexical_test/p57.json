@@ -1,0 +1,37 @@
+[
+    {
+        "type": "keyword",
+        "contents": [
+            {
+                "description": "S",
+                "production":[
+                    "START->S",
+                    "S-><a>A",
+                    "S-><b>B",
+                    "S->",
+                    "A-><a>B",
+                    "A-><b>A",
+                    "B-><a>S",
+                    "B-><b>A",
+                    "B->"
+                ]
+            }
+        ]
+    },
+    {
+        "type": "identifier",
+        "contents": []
+    },
+    {
+        "type": "constant",
+        "contents": []
+    },
+    {
+        "type": "operator",
+        "contents": []
+    },
+    {
+        "type": "delimiter",
+        "contents": []
+    }
+]

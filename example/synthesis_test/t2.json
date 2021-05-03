@@ -1,0 +1,397 @@
+[
+    {
+        "description": "CODE",
+        "contents": [
+            {
+                "left": "<CODE>",
+                "right": "<函数定义>"
+            }
+        ]
+    },
+    {
+        "description": "函数定义",
+        "contents": [
+            {
+                "left": "<函数定义>",
+                "right": "function <identifier> ( <参数声明> ) <函数块> end"
+            }
+        ]
+    },
+    {
+        "description": "参数声明",
+        "contents": [
+            {
+                "left": "<参数声明>",
+                "right": "<声明> <声明闭包>"
+            },
+            {
+                "left": "<参数声明>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "声明",
+        "contents": [
+            {
+                "left": "<声明>",
+                "right": "<identifier>"
+            }
+        ]
+    },
+    {
+        "description": "声明闭包",
+        "contents": [
+            {
+                "left": "<声明闭包>",
+                "right": ", <声明> <声明闭包>"
+            },
+            {
+                "left": "<声明闭包>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "函数块",
+        "contents": [
+            {
+                "left": "<函数块>",
+                "right": "<函数块闭包>"
+            }
+        ]
+    },
+    {
+        "description": "函数块闭包",
+        "contents": [
+            {
+                "left": "<函数块闭包>",
+                "right": "<声明> <函数块闭包>"
+            },
+            {
+                "left": "<函数块闭包>",
+                "right": "<赋值函数> <函数块闭包>"
+            },
+            {
+                "left": "<函数块闭包>",
+                "right": "<for循环> <函数块闭包>"
+            },
+            {
+                "left": "<函数块闭包>",
+                "right": "<while循环> <函数块闭包>"
+            },
+            {
+                "left": "<函数块闭包>",
+                "right": "<分支语句> <函数块闭包>"
+            },
+            {
+                "left": "<函数块闭包>",
+                "right": "<函数返回> <函数块闭包>"
+            },
+            {
+                "left": "<函数块闭包>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "赋值函数",
+        "contents": [
+            {
+                "left": "<赋值函数>",
+                "right": "<identifier> <赋值或函数调用>"
+            }
+        ]
+    },
+    {
+        "description": "赋值或函数调用",
+        "contents": [
+            {
+                "left": "<赋值或函数调用>",
+                "right": "= <右值>"
+            },
+            {
+                "left": "<赋值或函数调用>",
+                "right": "+= <右值>"
+            },
+            {
+                "left": "<赋值或函数调用>",
+                "right": "-= <右值>"
+            },
+            {
+                "left": "<赋值或函数调用>",
+                "right": "*= <右值>"
+            },
+            {
+                "left": "<赋值或函数调用>",
+                "right": "/= <右值>"
+            },
+            {
+                "left": "<赋值或函数调用>",
+                "right": "%= <右值>"
+            },
+            {
+                "left": "<赋值或函数调用>",
+                "right": "= { <参数列表> }"
+            },
+            {
+                "left": "<赋值或函数调用>",
+                "right": "= { }"
+            }
+        ]
+    },
+    {
+        "description": "参数列表",
+        "contents": [
+            {
+                "left": "<参数列表>",
+                "right": "<参数> <参数闭包>"
+            }
+        ]
+    },
+    {
+        "description": "参数闭包",
+        "contents": [
+            {
+                "left": "<参数闭包>",
+                "right": ", <参数> <参数闭包>"
+            },
+            {
+                "left": "<参数闭包>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "参数",
+        "contents": [
+            {
+                "left": "<参数>",
+                "right": "<identifier>"
+            },
+            {
+                "left": "<参数>",
+                "right": "<constant>"
+            }
+        ]
+    },
+    {
+        "description": "右值",
+        "contents": [
+            {
+                "left": "<右值>",
+                "right": "<表达式>"
+            },
+            {
+                "left": "<右值>",
+                "right": "- <表达式>"
+            },
+            {
+                "left": "<右值>",
+                "right": "<多项数据>"
+            }
+        ]
+    },
+    {
+        "description": "表达式",
+        "contents": [
+            {
+                "left": "<表达式>",
+                "right": "<因子> <项>"
+            }
+        ]
+    },
+    {
+        "description": "因子",
+        "contents": [
+            {
+                "left": "<因子>",
+                "right": "<因式> <因式递归>"
+            }
+        ]
+    },
+    {
+        "description": "因式",
+        "contents": [
+            {
+                "left": "<因式>",
+                "right": "( <表达式> )"
+            },
+            {
+                "left": "<因式>",
+                "right": "<identifier>"
+            },
+            {
+                "left": "<因式>",
+                "right": "<constant>"
+            }
+        ]
+    },
+    {
+        "description": "项",
+        "contents": [
+            {
+                "left": "<项>",
+                "right": "+ <因子> <项>"
+            },
+            {
+                "left": "<项>",
+                "right": "- <因子> <项>"
+            },
+            {
+                "left": "<项>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "因式递归",
+        "contents": [
+            {
+                "left": "<因式递归>",
+                "right": "* <因式> <因式递归>"
+            },
+            {
+                "left": "<因式递归>",
+                "right": "/ <因式> <因式递归>"
+            },
+            {
+                "left": "<因式递归>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "多项数据",
+        "contents": [
+            {
+                "left": "<多项数据>",
+                "right": "<constant> <constant闭包>"
+            }
+        ]
+    },
+    {
+        "description": "constant闭包",
+        "contents": [
+            {
+                "left": "<constant闭包>",
+                "right": ", <constant> <constant闭包>"
+            },
+            {
+                "left": "<constant闭包>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "for循环",
+        "contents": [
+            {
+                "left": "<for循环>",
+                "right": "for <identifier> = <表达式> , <表达式> , <表达式> do <函数块> end"
+            }
+        ]
+    },
+    {
+        "description": "while循环",
+        "contents": [
+            {
+                "left": "<while循环>",
+                "right": "while ( <逻辑表达式> ) do <函数块> end"
+            }
+        ]
+    },
+    {
+        "description": "逻辑表达式",
+        "contents": [
+            {
+                "left": "<逻辑表达式>",
+                "right": "<表达式> <逻辑运算符> <表达式>"
+            },
+            {
+                "left": "<逻辑表达式>",
+                "right": "( <逻辑表达式> ) <逻辑运算符> ( <逻辑表达式> )"
+            },
+            {
+                "left": "<逻辑表达式>",
+                "right": "! ( <逻辑表达式> )"
+            }
+        ]
+    },
+    {
+        "description": "逻辑运算符",
+        "contents": [
+            {
+                "left": "<逻辑运算符>",
+                "right": "and"
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": "or"
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": "not"
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": "=="
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": "!="
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": ">"
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": ">="
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": "<"
+            },
+            {
+                "left": "<逻辑运算符>",
+                "right": "<="
+            }
+        ]
+    },
+    {
+        "description": "分支语句",
+        "contents": [
+            {
+                "left": "<分支语句>",
+                "right": "if ( <逻辑表达式> ) then <函数块> <否则语句> end"
+            }
+        ]
+    },
+    {
+        "description": "否则语句",
+        "contents": [
+            {
+                "left": "<否则语句>",
+                "right": "elseif ( <逻辑表达式> ) then <函数块> <否则语句>"
+            },
+            {
+                "left": "<否则语句>",
+                "right": "else <函数块>"
+            },
+            {
+                "left": "<否则语句>",
+                "right": "<#>"
+            }
+        ]
+    },
+    {
+        "description": "函数返回",
+        "contents": [
+            {
+                "left": "<函数返回>",
+                "right": "return <因式>"
+            }
+        ]
+    }
+]

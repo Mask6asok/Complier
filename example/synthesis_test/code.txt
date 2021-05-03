@@ -1,0 +1,22 @@
+function main()
+    _value123=7
+    while(  _value123 >= 0) do
+        _value123= _value123 - 1
+    end
+    str="abcd\"123./,"
+    for _value123=7, 0, -1 do
+        a = a + 1
+    end
+    abc=1.0E-10
+    bcd=1.11E+11
+    result = abc + bcd
+    x = 11+1.1i
+    y = -111-11i
+    if((x<y) or (x>y)) then
+        x = x * y
+        y = y / x
+    end
+    x = -x
+    y = -y
+    return (result + 1)
+end
