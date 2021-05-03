@@ -1,7 +1,9 @@
 Python package installation
 
-```
+```powershell
 pip install -r requirements.txt
+# or
+.\venv\Scripts\activate
 ```
 
 Arguments
